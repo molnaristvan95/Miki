@@ -1,0 +1,84 @@
+*{
+  margin:0;
+  box-sizing:border-box;
+}
+body{
+  background:black;
+  padding:2vh 0;
+}
+img#bckgrnd{
+  display:block;
+  position:fixed;
+  z-index:-999;
+  width:100vw;
+  height:100vh;
+  filter:invert(1);
+}
+a:hover{
+  border:3px outset #0f0;
+  border-radius:5px;
+}
+a{
+  position:relative;
+  text-decoration:none;
+}
+a::before{
+  content:"katt a linkre:";
+  font-size:1.5rem;
+  transform:translateY(-1.5rem);
+  display:block;
+  width:100%;
+  text-align:center;
+  text-shadow:1px 1px 3px black;
+  animation:flash 5s;
+  animation-iteration-count:20;
+  color:black;
+}
+@keyframes flash{
+  50%{color:white;}
+}
+.block{
+  display:block;
+  background-size:cover;
+  height:20vh;
+  text-align:center;
+  margin:4vh auto;
+}
+.gitar{
+  background:url("https://r55musicstore.hu/wp-content/uploads/2019/02/photo_449496.png");
+  background-size:cover;
+  width:calc(20vh * 1.2);
+  height:20vh;
+  text-align:center;
+  margin:2vh auto;
+  width:calc(20vh * 1.2);
+}
+h2{
+  text-align:center;
+  line-height:1.5;
+  text-shadow:1px 1px 3px white;
+}
+h2:hover{
+  filter:invert(1);
+  color:blue;
+}
+.group{
+  background:url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/5Ps.jpg/340px-5Ps.jpg") fixed center center no-repeat;
+  width:calc(20vh * 1.5);
+}
+.drum{
+  background:url("https://i0.wp.com/drummagazine.com/wp-content/uploads/2019/03/auction-opener.png?resize=759%2C485&ssl=1") fixed center center no-repeat;
+}
+iframe{
+  width:85%;
+  height:calc(85vw / 1.7777);
+  margin:0 auto;
+  display:block;
+  border-radius:15px;
+}
+@media (min-width:700px) {
+  iframe{
+    transform:scale(.5);
+  }
+}
+
